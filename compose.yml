@@ -1,0 +1,8 @@
+services:
+  email-builder-js:
+    image: danielinniss/email-builder-js
+    ports:
+      - "4174:80"
+      - "4431:443"
+      - "4431:443/udp"
+    restart: on-failure
